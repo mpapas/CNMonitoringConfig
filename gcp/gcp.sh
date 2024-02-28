@@ -75,3 +75,7 @@ kubectl get podmonitoring -A
 kubectl logs -f -ngmp-system -lapp.kubernetes.io/part-of=gmp
 
 kubectl logs -f -ngmp-system -lapp.kubernetes.io/name=collector -c prometheus
+
+#####################  Configure traces #####################
+# To use Cloud Trace, your Google Cloud project must have the Cloud Trace API enabled. - 2.4443s, 1 command, 1 parameters
+gcloud services enable cloudtrace.googleapis.com | gnomon
